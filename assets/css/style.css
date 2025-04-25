@@ -1,0 +1,120 @@
+/* Custom CSS */
+
+/* Define Project Theme Colors */
+:root {
+  --project-primary: #0d6efd; /* Bootstrap Blue */
+  --project-secondary: #6c757d; /* Bootstrap Gray */
+  --project-accent: #198754; /* Bootstrap Green (Success) */
+
+  /* Override Bootstrap Variables with Project Theme Colors */
+  --bs-primary: var(--project-primary);
+  --bs-secondary: var(--project-secondary);
+  --bs-success: var(--project-accent); /* Using accent for success/positive actions */
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  /* Add other RGB values if needed */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+}
+
+/* --- Header/Navbar Styling --- */
+.navbar-brand .bi {
+    vertical-align: middle;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--bs-primary);
+}
+
+/* --- Hero Section Styling --- */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/seed/hero-background/1600/900') no-repeat center center;
+    background-size: cover;
+    min-height: 80vh; /* Adjust height as needed */
+    position: relative;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+}
+
+.hero-section .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-outline-light:hover {
+    border-color: var(--bs-light);
+    color: var(--bs-dark);
+    background-color: var(--bs-light);
+}
+
+/* --- Features Section Styling --- */
+#features .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#features .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+#features .card-body i {
+    font-size: 4rem;
+}
+
+/* --- About Section Styling --- */
+#about img {
+    max-height: 400px; /* Limit image height */
+    object-fit: cover;
+}
+
+/* --- Contact Section Styling --- */
+#contact .form-label i {
+    margin-right: 5px;
+    color: var(--bs-secondary);
+}
+
+/* --- Footer Styling --- */
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--bs-light);
+}
+
+/* --- Accessibility (Basic Examples) --- */
+/* Ensure sufficient contrast - Bootstrap handles much of this with its color palette */
+/* Focus states are handled by Bootstrap defaults */
+
+/* --- Responsive Adjustments (if needed beyond Bootstrap) --- */
+@media (max-width: 767.98px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
