@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramme Interactif Dog-Hawk-Fox | NHL 25 Pro Guide</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0e1621;
+            color: #e6e6e6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            margin-top: 5px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .redirect-message {
+            margin-top: 50px;
+            padding: 30px;
+            background: linear-gradient(145deg, #1a2a3a 0%, #15222e 100%);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        .redirect-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        
+        .redirect-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        
+        .redirect-text {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .redirect-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 10px;
+        }
+        
+        .redirect-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .redirect-button.secondary {
+            background: linear-gradient(145deg, #2c3e50 0%, #233140 100%);
+        }
+        
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .language-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .copyright {
+            margin-bottom: 10px;
+        }
+        
+        .disclaimer {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        /* Styles pour les éléments spécifiques à la langue */
+        [data-lang] {
+            display: none;
+        }
+        
+        [data-lang="fr"] {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                padding: 0 50px;
+            }
+            
+            .redirect-message {
+                margin: 30px 15px;
+                padding: 20px;
+            }
+            
+            .redirect-title {
+                font-size: 1.5rem;
+            }
+            
+            .redirect-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Diagramme Interactif Dog-Hawk-Fox</h1>
+                <p class="subtitle">NHL 25 Pro Guide</p>
+                <button id="language-toggle" class="language-toggle" title="Switch to English">
+                    <span id="language-icon">🇬🇧</span>
+                </button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="redirect-message">
+                <div class="redirect-icon">🏒</div>
+                <h2 class="redirect-title" data-lang="fr">Redirection vers le Diagramme Interactif</h2>
+                <h2 class="redirect-title" data-lang="en">Redirecting to Interactive Diagram</h2>
+                <p class="redirect-text" data-lang="fr">
+                    Vous allez être redirigé vers le diagramme interactif Dog-Hawk-Fox amélioré. 
+                    Cette visualisation avancée vous permettra d'explorer en détail cette stratégie de positionnement 
+                    professionnelle avec des animations fluides, des descriptions détaillées et des scénarios tactiques.
+                </p>
+                <p class="redirect-text" data-lang="en">
+                    You will be redirected to the enhanced Dog-Hawk-Fox interactive diagram.
+                    This advanced visualization will allow you to explore this professional positioning strategy 
+                    in detail with fluid animations, detailed descriptions, and tactical scenarios.
+                </p>
+                <a href="dog_hawk_fox_interactive_enhanced/index.html" class="redirect-button" data-lang="fr">Accéder au Diagramme Interactif</a>
+                <a href="dog_hawk_fox_interactive_enhanced/index.html" class="redirect-button" data-lang="en">Access Interactive Diagram</a>
+                <a href="positioning.html" class="redirect-button secondary" data-lang="fr">Retour au Guide de Positionnement</a>
+                <a href="positioning.html" class="redirect-button secondary" data-lang="en">Back to Positioning Guide</a>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <p class="copyright" data-lang="fr">NHL 25 Pro Guide &copy; 2025 - Créé pour améliorer votre jeu en EASHL 6v6</p>
+                <p class="copyright" data-lang="en">NHL 25 Pro Guide &copy; 2025 - Created to improve your game in EASHL 6v6</p>
+                <p class="disclaimer" data-lang="fr">Ce guide est une création non-officielle des fans pour les fans. NHL 25 et EASHL sont des marques déposées d'Electronic Arts Inc. Ce guide n'est pas affilié à EA Sports ou à la LNH. Toutes les informations sont basées sur l'expérience de jeu et l'analyse de la communauté.</p>
+                <p class="disclaimer" data-lang="en">This guide is an unofficial fan creation for fans. NHL 25 and EASHL are registered trademarks of Electronic Arts Inc. This guide is not affiliated with EA Sports or the NHL. All information is based on gameplay experience and community analysis.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Système de changement de langue
+        document.addEventListener('DOMContentLoaded', function() {
+            // Récupérer la langue sauvegardée ou utiliser le français par défaut
+            let currentLang = localStorage.getItem('dhf-language') || 'fr';
+            
+            // Mettre à jour l'affichage initial
+            updateLanguageDisplay(currentLang);
+            
+            // Mettre à jour l'icône du bouton de langue
+            const languageIcon = document.getElementById('language-icon');
+            if (languageIcon) {
+                languageIcon.textContent = currentLang === 'fr' ? '🇬🇧' : '🇫🇷';
+            }
+            
+            // Configurer le bouton de changement de langue
+            const languageToggle = document.getElementById('language-toggle');
+            if (languageToggle) {
+                languageToggle.addEventListener('click', function() {
+                    // Basculer la langue
+                    currentLang = currentLang === 'fr' ? 'en' : 'fr';
+                    
+                    // Mettre à jour l'icône
+                    languageIcon.textContent = currentLang === 'fr' ? '🇬🇧' : '🇫🇷';
+                    
+                    // Mettre à jour le titre du bouton
+                    this.title = currentLang === 'fr' ? 'Switch to English' : 'Passer au français';
+                    
+                    // Mettre à jour l'affichage
+                    updateLanguageDisplay(currentLang);
+                    
+                    // Sauvegarder la préférence
+                    localStorage.setItem('dhf-language', currentLang);
+                });
+            }
+            
+            // Redirection automatique après 3 secondes
+            setTimeout(function() {
+                window.location.href = 'dog_hawk_fox_interactive_enhanced/index.html';
+            }, 3000);
+        });
+        
+        // Fonction pour mettre à jour l'affichage selon la langue
+        function updateLanguageDisplay(lang) {
+            // Masquer tous les éléments de langue
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Afficher uniquement les éléments de la langue actuelle
+            document.querySelectorAll(`[data-lang="${lang}"]`).forEach(el => {
+                el.style.display = '';
+            });
+        }
+    </script>
+</body>
+</html>

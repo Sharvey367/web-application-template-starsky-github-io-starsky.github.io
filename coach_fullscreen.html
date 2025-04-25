@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHL 25 Pro Guide - Coach Corner (Plein Écran)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/copyright.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+        
+        .fullscreen-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0e1621;
+            overflow-y: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .fullscreen-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .fullscreen-title {
+            font-size: 2rem;
+            color: #3498db;
+            margin: 0;
+        }
+        
+        .exit-button {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .exit-button:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+        
+        .coach-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fullscreen-container">
+        <div class="fullscreen-header">
+            <h1 class="fullscreen-title" data-lang="fr">Coach Corner - Mode Plein Écran</h1>
+            <h1 class="fullscreen-title" data-lang="en">Coach Corner - Fullscreen Mode</h1>
+            <a href="coach.html" class="exit-button" data-lang="fr">Quitter</a>
+            <a href="coach.html" class="exit-button" data-lang="en">Exit</a>
+            <button id="language-toggle" class="language-toggle" title="Switch to English">
+                <span id="language-icon">🇬🇧</span>
+            </button>
+        </div>
+        
+        <div class="coach-grid">
+            <div class="technique-card">
+                <div class="technique-header defense-header" data-lang="fr">Défenseurs</div>
+                <div class="technique-header defense-header" data-lang="en">Defensemen</div>
+                <div class="technique-body">
+                    <ul>
+                        <li data-lang="fr"><strong>Gap Control :</strong> Maintenez une distance optimale avec les attaquants.</li>
+                        <li data-lang="en"><strong>Gap Control:</strong> Maintain optimal distance with attackers.</li>
+                        
+                        <li data-lang="fr"><strong>Pivots :</strong> Utilisez L2/LT pour des pivots rapides.</li>
+                        <li data-lang="en"><strong>Pivots:</strong> Use L2/LT for quick pivots.</li>
+                        
+                        <li data-lang="fr"><strong>Stick Checking :</strong> Privilégiez le poke check précis.</li>
+                        <li data-lang="en"><strong>Stick Checking:</strong> Prioritize precise poke checks.</li>
+                        
+                        <li data-lang="fr"><strong>Sorties de Zone :</strong> Faites des passes simples et sûres.</li>
+                        <li data-lang="en"><strong>Zone Exits:</strong> Make simple and safe passes.</li>
+                        
+                        <li data-lang="fr"><strong>Ligne Bleue Offensive :</strong> Restez mobile pour créer des angles.</li>
+                        <li data-lang="en"><strong>Offensive Blue Line:</strong> Stay mobile to create angles.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="technique-card">
+                <div class="technique-header center-header" data-lang="fr">Centres</div>
+                <div class="technique-header center-header" data-lang="en">Centers</div>
+                <div class="technique-body">
+                    <ul>
+                        <li data-lang="fr"><strong>Mises en Jeu :</strong> Variez vos techniques.</li>
+                        <li data-lang="en"><strong>Faceoffs:</strong> Vary your techniques.</li>
+                        
+                        <li data-lang="fr"><strong>Soutien Défensif :</strong> Couvrez le slot.</li>
+                        <li data-lang="en"><strong>Defensive Support:</strong> Cover the slot.</li>
+                        
+                        <li data-lang="fr"><strong>Sorties de Zone :</strong> Offrez-vous comme option de soutien.</li>
+                        <li data-lang="en"><strong>Zone Exits:</strong> Offer yourself as support.</li>
+                        
+                        <li data-lang="fr"><strong>Zone Neutre :</strong> Restez au centre de la glace.</li>
+                        <li data-lang="en"><strong>Neutral Zone:</strong> Stay in the center of the ice.</li>
+                        
+                        <li data-lang="fr"><strong>Cycle Offensif :</strong> Servez de pivot pour la possession.</li>
+                        <li data-lang="en"><strong>Offensive Cycle:</strong> Serve as a pivot for possession.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="technique-card">
+                <div class="technique-header winger-header" data-lang="fr">Ailiers</div>
+                <div class="technique-header winger-header" data-lang="en">Wingers</div>
+                <div class="technique-body">
+                    <ul>
+                        <li data-lang="fr"><strong>Positionnement Défensif :</strong> Couvrez les points.</li>
+                        <li data-lang="en"><strong>Defensive Positioning:</strong> Cover the points.</li>
+                        
+                        <li data-lang="fr"><strong>Sorties de Zone :</strong> Étirez-vous le long des bandes.</li>
+                        <li data-lang="en"><strong>Zone Exits:</strong> Stretch along the boards.</li>
+                        
+                        <li data-lang="fr"><strong>Entrées en Zone :</strong> Variez vos approches.</li>
+                        <li data-lang="en"><strong>Zone Entries:</strong> Vary your approaches.</li>
+                        
+                        <li data-lang="fr"><strong>Timing :</strong> Synchronisez pour les one-timers.</li>
+                        <li data-lang="en"><strong>Timing:</strong> Synchronize for one-timers.</li>
+                        
+                        <li data-lang="fr"><strong>Écrans :</strong> Positionnez-vous devant le gardien.</li>
+                        <li data-lang="en"><strong>Screens:</strong> Position in front of the goalie.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="technique-card">
+                <div class="technique-header goalie-header" data-lang="fr">Gardiens</div>
+                <div class="technique-header goalie-header" data-lang="en">Goalies</div>
+                <div class="technique-body">
+                    <ul>
+                        <li data-lang="fr"><strong>Positionnement :</strong> Alignez-vous avec le porteur.</li>
+                        <li data-lang="en"><strong>Positioning:</strong> Align with the puck carrier.</li>
+                        
+                        <li data-lang="fr"><strong>Profondeur :</strong> Ajustez selon la menace.</li>
+                        <li data-lang="en"><strong>Depth:</strong> Adjust according to the threat.</li>
+                        
+                        <li data-lang="fr"><strong>Mouvements Latéraux :</strong> Utilisez des poussées contrôlées.</li>
+                        <li data-lang="en"><strong>Lateral Movements:</strong> Use controlled pushes.</li>
+                        
+                        <li data-lang="fr"><strong>Lecture du Jeu :</strong> Anticipez les options.</li>
+                        <li data-lang="en"><strong>Reading the Play:</strong> Anticipate options.</li>
+                        
+                        <li data-lang="fr"><strong>Contrôle des Rebonds :</strong> Dirigez vers les coins.</li>
+                        <li data-lang="en"><strong>Rebound Control:</strong> Direct to the corners.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="technique-card" style="margin-top: 20px;">
+            <div class="technique-header" data-lang="fr">Conseils Généraux</div>
+            <div class="technique-header" data-lang="en">General Tips</div>
+            <div class="technique-body">
+                <ul>
+                    <li data-lang="fr"><strong>Communication :</strong> Parlez constamment, annoncez vos intentions.</li>
+                    <li data-lang="en"><strong>Communication:</strong> Talk constantly, announce your intentions.</li>
+                    
+                    <li data-lang="fr"><strong>Discipline :</strong> Évitez les pénalités inutiles.</li>
+                    <li data-lang="en"><strong>Discipline:</strong> Avoid unnecessary penalties.</li>
+                    
+                    <li data-lang="fr"><strong>Patience :</strong> Ne forcez pas les jeux risqués.</li>
+                    <li data-lang="en"><strong>Patience:</strong> Don't force risky plays.</li>
+                    
+                    <li data-lang="fr"><strong>Adaptation :</strong> Ajustez votre style selon l'adversaire.</li>
+                    <li data-lang="en"><strong>Adaptation:</strong> Adjust your style according to the opponent.</li>
+                    
+                    <li data-lang="fr"><strong>Attitude Positive :</strong> Restez positif même après des erreurs.</li>
+                    <li data-lang="en"><strong>Positive Attitude:</strong> Stay positive even after mistakes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/language.js"></script>
+</body>
+</html>
